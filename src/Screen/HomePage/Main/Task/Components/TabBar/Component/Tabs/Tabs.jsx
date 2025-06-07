@@ -5,10 +5,11 @@ import { HiMiniTableCells } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
 import { IoIosClose } from "react-icons/io";
 import ImageOption from "../../../../../../../../Assets/Images/option.png";
-import { IoIosArrowDown } from "react-icons/io";
+//import { IoIosArrowDown } from "react-icons/io";
 import Table from "../../../Tables/Tables";
 import ContextProvider from "../../../../../../../../Context/Context";
 import ReactSearchBox from "react-search-box";
+import Logout from "../../../../../../../Components/Logout";
 
 const Tab = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -69,11 +70,11 @@ const Tab = () => {
             </button>
             <button className="p-2 hover:bg-gray-200 rounded-full">
               <img src={ImageOption} alt="Options" className="w-6 h-6" />
+              
             </button>
-            <button className="px-4 py-2 bg-blue-500 text-white rounded-md flex items-center gap-2 hover:bg-blue-600 transition-colors duration-300">
-              <span>New</span>
-              <IoIosArrowDown />
-            </button>
+            
+
+            <Logout/>
           </div>
         </div>
 
